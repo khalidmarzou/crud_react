@@ -1,11 +1,11 @@
 import Button from "./small/Button";
 
-export default function ButtonContainer() {
+export default function ButtonContainer({ action }) {
   return (
     <div className="flex gap-4">
-      <Button content={"Update"} colors={"bg-orange-700 hover:bg-orange-900"} />
-      <Button content={"Delete"} colors={"bg-red-700 hover:bg-red-900"} />
-      <Button content={"Create"} colors={"bg-green-700 hover:bg-green-900"} />
+      <Button content={"Update"} colors={"bg-orange-600 hover:bg-orange-700"} action={action} />
+      <Button content={"Delete"} colors={"bg-red-600 hover:bg-red-700"} action={action} />
+      <Button content={"Create"} colors={"bg-green-600 hover:bg-green-700"} action={action} />
     </div>
   );
 }
